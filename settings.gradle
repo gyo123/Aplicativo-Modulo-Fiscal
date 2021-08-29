@@ -1,0 +1,2 @@
+rootProject.name = "Modulo Fiscal"
+include ':app'
