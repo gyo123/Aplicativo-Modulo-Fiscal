@@ -30,6 +30,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding true
+    }
+
 }
 
 dependencies {
@@ -45,4 +49,6 @@ dependencies {
 
     //material-intro
     implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
 }
