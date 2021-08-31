@@ -14,6 +14,11 @@
     <color name="azulFRACO">#509DFB</color>
     <color name="vermelhorFORTE">#FA2E2E</color>
     <color name="vermelhorFRACO">#F23939</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="actionButton">#F57C00</color>
+    <color name="numberButton">#455A64</color>
 
 
 </resources>

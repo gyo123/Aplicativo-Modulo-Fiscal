@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.modulofiscal"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -50,5 +50,7 @@ dependencies {
     //material-intro
     implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
     implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.17'
+    implementation 'net.objecthunter:exp4j:0.4.8'
 
 }

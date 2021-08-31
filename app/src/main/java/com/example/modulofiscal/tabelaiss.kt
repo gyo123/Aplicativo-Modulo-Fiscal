@@ -1,9 +1,11 @@
 package com.example.modulofiscal
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import com.example.modulofiscal.Formbemvindo.Agradecimentos
 import com.example.modulofiscal.databinding.ActivityTabelaissBinding
 import com.github.barteksc.pdfviewer.PDFView
 
@@ -18,11 +20,19 @@ class tabelaiss : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        val myweb = findViewById<WebView>(R.id.webview)
-        myweb.webViewClient = WebViewClient()
-        myweb.loadUrl("https://drive.google.com/file/d/1SnUtIoH4sZ0mWVS54DDCs7cYC6IbA6IJ/view?usp=sharing")
-        val websettings = myweb.settings
-        websettings.javaScriptEnabled = true
+
+
+        val toolbar = binding.toolbarAgrad
+        toolbar.title = "Goiaba"
+        toolbar.setTitleTextColor(getColor(R.color.white))
+        toolbar.setBackgroundColor(getColor(R.color.marronFORTE))
+        toolbar.setTitleMargin(300, 0, 300, 0)
+        toolbar.setNavigationIcon(getDrawable(R.drawable.icon_back_to))
+        toolbar.setOnClickListener {
+            val intent = Intent(this, Agradecimentos::class.java)
+            startActivity(intent)
+            finish()
+        }
 
 
 

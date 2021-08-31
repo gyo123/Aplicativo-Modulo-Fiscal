@@ -8,8 +8,25 @@
     android:background="@drawable/shape_degrade2"
     android:orientation="vertical">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_agrad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:src="@drawable/logomainpage"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/imgview"
+        android:scaleType="centerCrop"
+        android:layout_width="1000px"
+        android:layout_height="500px"/>
+
     <Button
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:id="@+id/btimposto"
         android:layout_marginStart="15dp"
         android:layout_width="wrap_content"
@@ -19,27 +36,27 @@
         android:textAllCaps="false"
          />
     <Button
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/btconsultar"
         android:layout_marginStart="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/vermelhorFORTE"
-        android:text="CONSULTAR TABELA ISS"
+        android:text="TABELA ISS"
         android:textAllCaps="false"
         />
     <Button
-        android:layout_marginTop="30dp"
-        android:id="@+id/btLei116"
+        android:layout_marginTop="10dp"
+        android:id="@+id/calculadora"
         android:layout_marginStart="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/vermelhorFORTE"
-        android:text="LEI 116/03 COMENTADA"
-        android:textAllCaps="false"
+        android:text="Calculadora"
+        android:textAllCaps="true"
         />
     <Button
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/btNfe"
         android:layout_marginStart="15dp"
         android:layout_width="wrap_content"
@@ -49,13 +66,33 @@
         android:textAllCaps="false"
         />
     <Button
-        android:layout_marginTop="30dp"
-        android:id="@+id/btcalcularpresumido"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bttabelasimplesnacional"
         android:layout_marginStart="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/vermelhorFORTE"
-        android:text="CALCULAR LUCRO PRESUMIDO"
+        android:text="SIMPLES NACIONAL"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/bttabelapresumido"
+        android:layout_marginStart="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/vermelhorFORTE"
+        android:text="LUCRO PRESUMIDO"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/bttabelalucroreal"
+        android:layout_marginStart="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/vermelhorFORTE"
+        android:text="LUCRO REAL"
         android:textAllCaps="false"
         />
 
