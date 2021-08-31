@@ -20,5 +20,11 @@
     <color name="actionButton">#F57C00</color>
     <color name="numberButton">#455A64</color>
 
+    <color name="colorblack">#24272E</color>
+    <color name="colorGray">#FFF700</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPurple">#738DEF</color>
+    <color name="roxoFORTE">#EC39F2</color>
+
 
 </resources>

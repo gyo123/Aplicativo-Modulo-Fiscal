@@ -53,7 +53,7 @@ class Agradecimentos : AppCompatActivity() {
     }
     private fun Calculadora1() {
         binding.calculadora.setOnClickListener {
-            val intent = Intent(this, calculadora::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 
         }

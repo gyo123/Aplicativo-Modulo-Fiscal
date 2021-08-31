@@ -23,7 +23,7 @@ class tabelaiss : AppCompatActivity() {
 
 
         val toolbar = binding.toolbarAgrad
-        toolbar.title = "Goiaba"
+        toolbar.title = "Banana"
         toolbar.setTitleTextColor(getColor(R.color.white))
         toolbar.setBackgroundColor(getColor(R.color.marronFORTE))
         toolbar.setTitleMargin(300, 0, 300, 0)
