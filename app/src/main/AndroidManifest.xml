@@ -12,8 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ModuloFiscal">
-        <activity android:name=".calculadora"></activity>
-        <activity android:name=".simplesnacional" />
+        <activity android:name=".simplesnacional"></activity>
+        <activity android:name=".calculadora" />
         <activity android:name=".DicasLucroPresumido" />
         <activity android:name=".lei116" />
         <activity android:name=".infimpostos" />

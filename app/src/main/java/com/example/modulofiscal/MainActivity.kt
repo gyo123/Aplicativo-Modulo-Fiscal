@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.modulofiscal.Formbemvindo.Agradecimentos
-import com.example.modulofiscal.databinding.ActivityCalculadoraBinding
 import com.example.modulofiscal.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.ExpressionBuilder
 
@@ -71,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                 btnMultiply.setOnClickListener { appendOnClick(false, "*") }
                 btnDivide.setOnClickListener { appendOnClick(false, "/") }
                 btnLeftB.setOnClickListener { appendOnClick(false, "%") }
-                btnRightB.setOnClickListener { appendOnClick(false, ")") }
+                btnRightB.setOnClickListener { appendOnClick(false, "%") }
 
 
                 btnClear.setOnClickListener {
@@ -112,14 +111,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculate() {
+        var tvOutput = binding.tvOutput
+        var tvInput = binding.tvInput
+
+
+
 
         try {
-            var tvOutput = binding.tvOutput
-            var tvInput = binding.tvInput
+
 
             val input = ExpressionBuilder(tvInput.text.toString()).build()
             val output = input.evaluate()
             val longOutput = output.toLong()
+            val porc = "%"
+
+
             if (output == longOutput.toDouble()){
                 tvOutput.text = longOutput.toString()
             }else{

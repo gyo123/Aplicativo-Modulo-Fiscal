@@ -13,6 +13,7 @@ class DicasLucroPresumido : AppCompatActivity() {
         binding = ActivityDicasLucroPresumidoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
         val toolbar = binding.toolbarAgrad
         toolbar.title = "Maçã"
         toolbar.setTitleTextColor(getColor(R.color.white))

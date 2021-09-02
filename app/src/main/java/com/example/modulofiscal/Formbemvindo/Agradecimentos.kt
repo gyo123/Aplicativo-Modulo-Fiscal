@@ -26,8 +26,8 @@ class Agradecimentos : AppCompatActivity() {
         toolbar.title = "Macarrão"
         toolbar.setTitleTextColor(getColor(R.color.white))
         toolbar.setBackgroundColor(getColor(R.color.marronFORTE))
-        toolbar.setTitleMargin(300, 0, 300, 0)
-        toolbar.setNavigationIcon(getDrawable(R.drawable.icon_back_to))
+        toolbar.setTitleMargin(350, 0, 350, 0)
+
 
 
 
@@ -35,6 +35,8 @@ class Agradecimentos : AppCompatActivity() {
         Tabelaiss()
         Infimpostos()
         Calculadora1()
+        dicasLucro()
+        SimplesNacional()
 
     }
     private fun Tabelaiss() {
@@ -56,6 +58,18 @@ class Agradecimentos : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 
+        }
+    }
+    private fun dicasLucro() {
+        binding.bttabelapresumido.setOnClickListener {
+            var intent = Intent(this, DicasLucroPresumido::class.java)
+            startActivity(intent)
+        }
+    }
+    private fun SimplesNacional() {
+        binding.bttabelasimplesnacional.setOnClickListener {
+            var intent = Intent(this, simplesnacional::class.java)
+            startActivity(intent)
         }
     }
 

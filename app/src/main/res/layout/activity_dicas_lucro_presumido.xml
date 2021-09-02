@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/marronFRACO"
     tools:context=".DicasLucroPresumido">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_agrad"
         android:layout_width="match_parent"
@@ -13,13 +16,259 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/titletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O que é Lucro Presumido?" />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O Lucro Presumido é um regime tributário em que a empresa faz a apuração simplificada do Imposto de Renda de Pessoa Jurídica (IRPJ) e da Contribuição Social sobre o Lucro Líquido (CSLL)." />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Receita Federal presume que uma determinada porcentagem do faturamento é o lucro. Com esse percentual de presunção, não será mais necessário comprovar para o fisco se houve ou não lucro no período do recolhimento dos impostos. Conforme demonstraremos a seguir, isso é muito bom em algumas situações, mas pode ser desvantajoso em outros casos." />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O Lucro Presumido pode ser utilizado pela maioria das empresas no Brasil. Os requisitos para aderir ao Lucro Presumido são apenas que se fature abaixo de R$ 78 milhões anuais e que não se opere em ramos específicos, como bancos e empresas públicas." />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As empresas que utilizam esse regime têm alíquotas de imposto que podem variar de acordo com o tipo de atividade que exercem. As porcentagens vão de 1,6% até 32% sobre o faturamento." />
+
+            <TextView
+                style="@style/titletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Quais São os Impostos do Lucro Presumido?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:text="I- Apuração Mensal"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Os impostos cujo cálculo é feito todos os meses aplicando-se a alíquota ao faturamento da empresa são os seguintes:" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Imposto Sobre Serviços (ISS): de 2,5 a 5% conforme a cidade e serviço prestado;" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Programa de Integração Social (PIS): 0,65%;" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Contribuição para o Financiamento da Seguridade Social (COFINS): 3%." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:text="II- Apuração Trimestral"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Já o IRPJ (Imposto de Renda) e a CSLL (Contribuição Social sobre o Lucro Líquido) vão incidir trimestralmente nas alíquotas de 15% e 9%, respectivamente, apenas sobre os percentuais de presunção de lucro, conforme a atividade da empresa:" />
+
+            <ImageView
+                android:layout_width="1100px"
+                android:layout_height="800px"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/tabelalucro1" />
+
+            <TextView
+                style="@style/titletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Como Calcular Impostos do Lucro Presumido?" />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="exemplo: uma empresa prestadora de serviços de engenharia, enquadrada no Lucro Presumido, teve um faturamento de R$ 12.000,00 em janeiro. Digamos que o ISS da cidade onde ela presta o serviço seja de 5%, teremos, então, os seguintes impostos sobre o faturamento:" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIS (0,65%): R$ 78" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COFINS (3%): R$ 360" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISS (5%): R$ 600" />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para o cálculo do IR e da CSLL, é preciso aguardar o faturamento do trimestre; então, suponhamos que o faturamento de R$ 12.0000,00 se repita em fevereiro e março: teremos um total faturado no trimestre de R$ 36.000,00." />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A presunção para o serviço de engenharia é de 32%; então, aplicaremos 32% sobre R$ 36.000,00. Assim, temos uma base de R$ 11.520,00 para o cálculo de IR e CSLL. O resultado final será:" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IRPJ (15%): R$ 1.728,00;" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CSLL (9%): R$ 1.036,80." />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dessa forma, mesmo que o lucro seja maior que o percentual prefixado, como no caso do exemplo — um lucro trimestral superior a R$ 11.520,00 —, o imposto incidirá apenas sobre aquela margem do faturamento." />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A lógica é a mesma em caso de lucro efetivo menor, pois o imposto a ser pago será proporcional ao índice, ou seja, em caso de prejuízo no período, você pagará mais impostos do que deveria." />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Além desses impostos principais, há outros que podem incidir de acordo com as características da atividade da empresa, como impostos sobre importações e exportações e folha de pagamento." />
+
+            <TextView
+                style="@style/titletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="INSS Sobre a Folha de Pagamento" />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quem é optante pelo Lucro Presumido também paga 20% de INSS sobre a folha de pagamento, mais outras entidades e um fator de risco. Exceto as empresas listadas no anexo IV do Simples Nacional, os demais já têm esses 20% incluídos no DAS, o que pode fazer com que o Simples seja mais barato que o Lucro Presumido para quem tem uma grande despesa com folha." />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para saber o quanto o INSS está custando no Lucro Presumido, é importante fazer o cálculo do INSS para se certificar de que os impostos não ficarão muito mais caros. O cálculo deve ser feito assim:" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="selecione a sua maior despesa com salários e aplique os 20% sobre a folha;" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="divida o resultado obtido pela média do faturamento para obter a alíquota do INSS sobre folha;" />
+
+            <TextView
+                style="@style/itenspar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="some a sua alíquota de Lucro Presumido e veja se o valor pago ainda é menor que a alíquota do Simples Nacional." />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muitas vezes, o Lucro Presumido fica mais caro quando se aplica essa valoração em cima do cálculo da folha de pagamento. Por esse motivo, é interessante fazer simulações e entender bem os regimes tributários antes de decidir o que será melhor em sua empresa." />
+
+            <TextView
+                style="@style/descrp1par"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para se ter uma ideia dos valores e percentuais, no caso de empresas de serviço que faturam até R$ 187.500,00 por trimestre, a Tabela do Lucro presumido seria a seguinte:" />
+
+            <ImageView
+
+                android:layout_width="1180px"
+                android:layout_height="300px"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/tabelalucro2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
 
 
         </LinearLayout>
 
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".simplesnacional"
+    android:orientation="vertical"
+    android:background="@color/marronFRACO">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_agrad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="O que é Simples Nacional?"
+                style="@style/titletext"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O Simples Nacional é um regime tributário criado com o objetivo de atender micro e pequenas empresas e facilitar o recolhimento dos seus impostos. "
+
+                style="@style/descrp1par"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Em uma única guia, o DAS (Documento de Arrecadação do Simples Nacional), é possível recolher 8 diferentes tributos, entre eles o ICMS e o ISS. "
+                style="@style/descrp1par"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mas para poder se enquadrar é preciso cumprir algumas regras, uma delas diz respeito ao faturamento anual, que não pode ultrapassar  R$ 4,8 milhões."
+                style="@style/descrp1par"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="Quem pode optar pelo Simples Nacional?"
+                style="@style/titletext"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Os Microempreendedores Individuais MEI), bem como outras microempresas e empresas de pequeno porte (EPP), podem participar do programa. Além disso, em qualquer dos casos é fundamental não ter débitos em aberto com o governo e o trabalho que a empresa exerce deve fazer parte de um dos anexos de atividades do Simples Nacional."
+                style="@style/descrp1par"
+                />
+            <ImageView
+
+                android:layout_width="1000px"
+                android:layout_height="300px"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simples1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Como Calcular o Imposto do Simples Nacional?"
+                android:textAllCaps="true"
+                style="@style/titletext"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1º Passo: Cálculo da Receita Bruta"
+                style="@style/descrp1par"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No caso, estamos falando da receita bruta total (RBT ou RBT12) de uma empresa, que corresponde a todas as entradas resultantes da venda de produtos e/ou serviços dos últimos 12 meses."
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2º Passo: Identificação da Alíquota"
+                style="@style/descrp1par"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Com o valor da RBT12 em mãos, o próximo passo para o cálculo do Simples Nacional é consultar o anexo correspondente ao seu setor de atuação, verificar em qual faixa a sua receita se encaixa e identificar a alíquota e a parcela dedutível (PD) ."
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exemplo da Empresa enquadrada no anexo 1, No caso, o faturamento anual desse negócio foi de R$ 340 mil, o que o coloca na 2ª faixa desse anexo, e o faturamento do mês de cálculo de R$ 30 mil."
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assim, a alíquota para o cálculo do Simples Nacional desse exemplo é de 7,30%, e o valor a deduzir R$ 5.940,00"
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3º Passo: Cálculo da Alíquota efetiva"
+                style="@style/descrp1par"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agora, é o momento de calcular a alíquota efetiva do Simples Nacional. Para isso, você deve aplicar os valores e percentuais identificados até agora na seguinte fórmula:"
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[(RBT12 x ALIQ) – PD] / RBT12"
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seguindo com o nosso exemplo, temos então estes valores:"
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RBT12: R$ 340.000,00"
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALIQ: 7,30%"
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PD: R$ 5.940,00"
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[(340.000,00 x 7,30%) – 5.940,00] / 340.000,00
+(24.820,00 – 5.940,00) / 340.000,00
+18.880,00 / 340.000,00
+0,055 ou 5,55%"
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assim, você chegou ao percentual de 5,55%, que corresponde à alíquota efetiva a ser cobrada."
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4º Passo: Valor do Simples Nacional"
+                style="@style/descrp1par"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Considerando que o faturamento mensal da empresa desse exemplo foi de R$ 30 mil, ao aplicar esse percentual temos o valor de recolhimento de R$ 1.665,88."
+                style="@style/itenspar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/descrp1par"
+                android:text="Você também pode conferir o percentual de repartição dos tributos, informado em cada anexo, conforme abaixo:"
+                />
+            <ImageView
+
+                android:layout_width="1100px"
+                android:layout_height="300px"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simples2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para calcular a Receita Bruta Proporcionalizada(empresa nova), basta seguir os mesmos passos e multiplicar o 1º mês por 12 ou a média."
+                style="@style/descrp1par"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anexo 1 - Comércio (Lojas em Geral)"
+                style="@style/titletext"
+                />
+            <ImageView
+                android:layout_width="1020px"
+                android:layout_height="430px"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simplesanex1i0" />
+            <ImageView
+                android:layout_width="1020px"
+                android:layout_height="430px"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simplesanex1i1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anexo 2 - Indústria/Fábricas e Empresas Industriais"
+                style="@style/titletext"
+                />
+            <ImageView
+                android:layout_width="1020px"
+                android:layout_height="430px"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simplesanex2i0" />
+            <ImageView
+                android:layout_width="1020px"
+                android:layout_height="430px"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simplesanex2i1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anexo 3 - Prestadores de Serviços(Instalação, Reparos e de Manutenção"
+                style="@style/titletext"
+                />
+            <ImageView
+                android:layout_width="1020px"
+                android:layout_height="430px"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simplesanex3i0" />
+            <ImageView
+                android:layout_width="1020px"
+                android:layout_height="430px"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simplesanex3i1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anexo 4 - Prestadores de Serviços(De Limpza, Vigilância, Obras, Construção de Imóveis, Serviços Advocatícios)"
+                style="@style/titletext"
+                />
+            <ImageView
+                android:layout_width="1020px"
+                android:layout_height="430px"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simplesanex4i0" />
+            <ImageView
+                android:layout_width="1020px"
+                android:layout_height="430px"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simplesanex4i1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anexo 5 - Prestadores de Serviços(Auditoria, jornalismo, tecnologia, publicidade, enganharia, blá blá blá)"
+                style="@style/titletext"/>
+            <ImageView
+                android:layout_width="1020px"
+                android:layout_height="430px"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simplesanex5i0" />
+            <ImageView
+                android:layout_width="1020px"
+                android:layout_height="430px"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/simplesanex5i1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

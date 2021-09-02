@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Modulo Fiscal</string>
+    <string name="desc">desc</string>
+    <string name="par1imposto">“Antes de abrir sua empresa, a liderança deve considerar, na formação dos preços e na projeção da margem de lucro, especialmente, o peso dos tributos incidentes sobre:</string>
 </resources>

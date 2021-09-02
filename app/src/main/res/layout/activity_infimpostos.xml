@@ -5,23 +5,161 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".infimpostos"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/marronFRACO">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_agrad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </androidx.appcompat.widget.Toolbar>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informação Sobre os Principais Impostos"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="fantasy"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/par1imposto"
+        style="@style/descrp1par"
+        android:fontFamily="casual"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        style="@style/itenspar"
+        android:layout_height="wrap_content"
+        android:text="(i) as receitas de venda de produtos e serviços (IPI, ICMS, ISS, PIS/COFINS e contribuições previdenciárias),"
+        />
+    <TextView
+        style="@style/itenspar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(ii) as importações de bens, serviços e tecnologia (Imposto de Importação, IPI, PIS/COFINS, CIDE, ICMS e ISS),"
+        />
+    <TextView
+        style="@style/itenspar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(iv) o patrimônio (ITR, IPTU e IPVA),"
+        />
+    <TextView
+        style="@style/itenspar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(v) o exercício de certas atividades reguladas (ex: taxa da Anatel, FUST, FUNTEL) e, finalmente,"
+        />
+    <TextView
+        style="@style/itenspar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(vi) o lucro (IRPJ e CSL)."
+        />
+    <TextView
+        style="@style/descrp1par"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A incidência desses tributos varia em função do setor de atuação e do porte da empresa.”"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/titletext"
+        android:layout_marginTop="8dp"
+        android:text="Principais Tributos Federais:"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IRPJ (Imposto de Renda Pessoa Jurídica): como foi dito, incide sobre o lucro da empresa, com uma alíquota de 15%, mais um adicional de 10% sobre a parcela do lucro que exceder o montante mensal estipulado. O IRPJ é retido pelos clientes no momento do pagamento das faturas."
+        style="@style/itenspar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/itenspar"
+        android:text="CSLL (Contribuição Social sobre o Lucro Líquido): assim como o IRPJ, incide sobre o lucro real do negócio, com alíquota de 9%."
+        />
+    <TextView
+    android:layout_width="wrap_content"
+        style="@style/itenspar"
+    android:layout_height="wrap_content"
+    android:text="COFINS (Contribuição para Financiamento da Seguridade Social) e PIS (Programa de Integração Social) /PASEP (Programa de Formação do Patrimônio do Servidor Público): são contribuições que incidem sobre a receita bruta da empresa, em geral, com alíquota combinada de 3,65% (3% de COFINS e 0,65% de PIS/PASEP). Assim como o IRPJ, o PIS/COFINS também é retido pelos clientes no momento do pagamento das faturas."
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IPI (Imposto sobre Produtos Industrializados): é um importo sobre produtos industrializados, que são tributados no momento em que saem da fábrica. As alíquotas variam bastante por produto e, em média, ficam entre 10% e 12%."
+        style="@style/itenspar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/titletext"
+        android:layout_marginTop="15dp"
+        android:text="Principal Tributo Estadual:"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ICMS (Imposto sobre Circulação de Mercadorias e Serviços): é parecido com o IPI, mas que pode incidir também sobre alguns serviços. Varia bastante por tipo de produto ou serviço."
+        style="@style/itenspar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dica: consulte a Secretaria da Fazenda do seu Estado para saber qual é a alíquota que incide sobre ICMS do seu produto ou serviço. Fique atento, pois o ICMS é recolhido antecipadamente pelos seus fornecedores, por isso é pago por substituição tributária."
+        style="@style/descrp1par"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Principal Tributo Municipal"
+        style="@style/titletext"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ISS (Imposto sobre Serviços de Qualquer Natureza): incide sobre prestação dos serviços listados na Lei Complementar nº116/03. A alíquota em média varia entre 2% e 5%. Segundo Eduardo Borges, “alguns municípios cobram o ISS com base no regime de caixa (à medida do recebimento da receita); outros, sob o regime de competência (à medida da realização do faturamento)."
+        style="@style/itenspar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Na maioria dos casos, o ISS é devido ao município em que estiver efetivamente situado o estabelecimento prestador. Entretanto, em relação a determinados tipos de serviço, o ISS será devido ao município em que for prestado, a exemplo dos serviços de construção, limpeza, varrição etc.”."
+        style="@style/itenspar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/itenspar"
+        />
 
 
-        </LinearLayout>
+</LinearLayout>
 
-    </ScrollView>
+</ScrollView>
+
+
+
+
+
+
 
 </LinearLayout>

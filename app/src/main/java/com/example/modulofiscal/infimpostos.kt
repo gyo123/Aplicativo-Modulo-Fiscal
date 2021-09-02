@@ -3,11 +3,9 @@ package com.example.modulofiscal
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.webkit.WebView
-import android.webkit.WebViewClient
 import com.example.modulofiscal.Formbemvindo.Agradecimentos
 import com.example.modulofiscal.databinding.ActivityInfimpostosBinding
-import com.example.modulofiscal.databinding.ActivityTabelaissBinding
+
 
 class infimpostos : AppCompatActivity() {
 
